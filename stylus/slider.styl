@@ -1,0 +1,45 @@
+gris = #f7f7f7
+
+
+box()
+  box-sizing border-box
+
+*
+  margin 0
+  padding 0
+
+body
+  background gris
+  font-family sans-serif
+
+ul
+  list-style none
+  margin 0 auto
+  overflow hidden
+  width 800px
+  li
+   display none
+   height 400px
+   position relative
+   width 800px
+   &:nth-child(1)
+    display block
+   img
+    height 400px
+    width 800px
+   .izquierda
+   .derecha
+     height 100%
+     position absolute
+     width 50%
+     z-index 99
+     padding 5%
+     box()
+   .izquierda
+     left 0
+     background rgba(153, 178, 255, 0.64)
+     bottom -100%
+   .derecha
+     right 0
+     background rgba(121, 115, 114, 0.56)
+     top -100%
