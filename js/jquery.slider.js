@@ -1,4 +1,11 @@
-$(function(){
+/*----------------------------------
+ Autor: Esteban Vera
+ Twitter : @kiokotzu
+ Correo : esteban.vg@outlook.com
+ ----------------------------------*/
+
+
+ $(function(){
 	jQuery.fn.Slider = function(opciones){
 
 		/*configuracion por defecto */
@@ -22,7 +29,7 @@ $(function(){
 
 				i = (i + 1) % total.length;
 				total.hide();
-				
+
 				izquierda.animate({bottom : -100+'%'});
 				derecha.animate({top : -100+'%'});
 
